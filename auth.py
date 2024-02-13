@@ -25,7 +25,7 @@ def main():
     pprint(page_response, indent=2)
 
 def write_text(client, page_id, text, type):
-    Client.blocks.children.append(
+    Client.block.children.append(
         block_id=page_id,
         children=[
             {
@@ -47,5 +47,5 @@ def write_text(client, page_id, text, type):
 
 if __name__ == '__main__':
     main()
-    write_text('ae8f0b77-72ac-4408-96fc-8b54ea973520', notion_page_id, 'no', 'to_do')
+    write_text('ae8f0b77-72ac-4408-96fc-8b54ea973520', notion_page_id, 'nteo', 'to_do')
           
